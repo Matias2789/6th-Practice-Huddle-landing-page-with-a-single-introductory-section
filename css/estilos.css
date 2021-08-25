@@ -1,0 +1,137 @@
+/* !Fuentes de texto y configuraciones generales */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/* 
+*font-family: 'Open Sans', sans-serif;
+*font-family: 'Poppins', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* !Empezando con First Movil 375px */
+body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+.container {
+    margin: 30px 25px 30px 25px;
+    color: #fff;
+}
+/* ?Editando las imagenes */
+.images_content {
+    padding: 0 12px 0 12px;
+}
+.images_logo {
+    width: 125px;
+    padding-bottom: 60px;
+}
+.images_ejemplo {
+    width: 295px;
+    height: 215px;
+    margin: auto;
+}
+/* ?Editando el texto */
+.text_content {
+    text-align: center;
+}
+h1 { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top: 50px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    opacity: .8;
+    font-size: 1em;
+    padding: 18px 10px 25px 10px;
+    line-height: 1.2;
+}
+/* ?Editando el boton */
+button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 2em;
+    border-color: transparent;
+}
+/* ?Editando los iconos */
+.icon_content {
+    width: 120px;
+    margin: auto;
+    padding-top: 68px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: .8;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+}
+/* !Empezando a editar el Desktop 1440px */
+@media screen and (min-width: 1320px){
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-color: hsl(257, 40%, 49%);
+    }
+    .container {
+        display: flex;
+        margin: 50px;
+    }
+    /* ?Editando las imagenes */
+    .images_content {
+        padding-left: 12px;
+    }
+    .images_logo {
+        width: 210px;
+    }
+    .images_ejemplo {
+        padding-top: 25px;
+        width: 720px;
+        height: 530px;
+    }
+    /* ?Editando el texto */
+    .text_content {
+        text-align: left;
+        padding-top: 150px;
+        margin: auto;
+        padding-left: 45px;
+    }
+    h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+    p {
+        padding-left: 0;
+        font-size: 1.1em;
+        padding-right: 40px;
+        opacity: .75;
+    }
+    /* ?Editando el boton */
+    button {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    /* ?Editando los iconos */
+    .icon_content {
+        float: right;
+        width: 200px;
+        padding-right: 25px;
+        padding-top: 180px;
+    }
+    .bx {
+        padding: 8px;
+        font-size: 1.25em;
+    }
+    i {
+        border: 2px solid #fff;
+        width: 40px;
+        height: 40px;
+    }
+}
